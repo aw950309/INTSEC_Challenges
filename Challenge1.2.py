@@ -5,7 +5,7 @@ Technical details:
     - Key length: 120 bits (15 bytes).
     - Encryption method: Repeating-key XOR.
     - Attack: Known-plaintext for the first 14 bytes, brute-force for the last byte.
-    - Time complexity: O(n)
+    - Time complexity: O(n).
 
 Prerequisites:
     - The file "Challenge-1.2.enc" must be in the same directory as this script.
