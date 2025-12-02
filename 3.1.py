@@ -14,7 +14,7 @@ Author: Alex Wagner.
 Version: 1.2.
 Date: 2025-11-28.
 """
-
+# HELLO CHUCK
 import hashlib
 import itertools
 import os
