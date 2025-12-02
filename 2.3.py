@@ -1,33 +1,55 @@
-# Challenge 2.3 (Normal): Send me an email encrypted with PGP
-#     This challenge is a practical exercise in using asymmetric cryptography with PGP (Pretty Good Privacy) to send a secure email (Challenges Last updated 2025-11-12.pdf, p. 1; Cryptography 2.pdf, p. 65).
-#
-# Step-by-Step Guide:
-#
-# Install PGP Software: You need a tool that can handle PGP encryption. A common one is GnuPG (GPG). You might also use an email client with PGP integration, like Thunderbird with the Enigmail/OpenPGP add-on.
-#
-# Generate Your Own Key Pair: Create your own public and private PGP key pair.
-#
-# gpg --full-generate-key
-# Follow the prompts. Choose RSA, a key size (e.g., 4096 bits), an expiration date, and provide your name and email address. You will also set a passphrase to protect your private key.
-# Get the Instructor's Public Key: Download the instructor's public key from NextILearn as instructed.
-#
-# Import the Instructor's Public Key: Add the instructor's key to your keyring so you can use it to encrypt messages for them.
-#
-# gpg --import /path/to/instructors_key.asc
-# Find a Source on "Web of Trust": Read about the PGP Web of Trust concept. It's a decentralized trust model used to verify the authenticity of public keys. Find an article or a good source that explains it and get the link.
-#
-# Compose the Email: Write an email that includes:
-#
-# The link to the source on Web of Trust you found.
-# Your own public key, so the instructor can reply securely. You can export your key using gpg --armor --export YOUR_EMAIL.
-# Encrypt the Email: Use the instructor's public key to encrypt the body of your email. Your PGP software or email client will handle this. The subject line should not be encrypted.
-#
-# Subject: [INTSEC] Challenge 2.3
-# Send the Email: Send the encrypted email to the instructor.
-#
-# Upload Your Public Key: Upload your public key to a public keyserver as instructed.
-#
-# gpg --keyserver keyserver.ubuntu.com --send-keys YOUR_KEY_ID
-# Receive and Decrypt the Reply: The instructor will reply with an email encrypted using your public key. You will need to use your private key (and its passphrase) to decrypt it. The decrypted message will contain the secret answer for the challenge.
-#
-# This step-by-step guide should simplify the process for tackling the lecture 2 challenges. Good luck
+"""
+Challenge 2.3 (Normal): Send me an email encrypted with PGP:
+
+Read about Web of Trust.
+
+Get my public key from NextILearn.
+
+Send me an email (encrypted with my public key) including a link to a source on Web of Trust and your public key. (You can find my key on ILearn.)
+
+    The email's subject must be "[INTSEC] Challenge 2.3".
+
+    Please use the ascii armored format (.asc) rather than the binary format (.gpg).
+
+Upload your public key on https://keyserver.ubuntu.com
+
+I will answer you using your public key, giving you the secret to put as an answer for the challenge.
+Make sure that you use the email address associated with your key! (and not a different one).
+
+
+What I DID:
+
+1. brew install gnupg
+
+2. gpg --import /Users/alexwagner/Kod/GitHub/INTSEC_Challenges/PGP-public-key-nicolas-harrand.asc
+
+gpg: directory '/Users/alexwagner/.gnupg' created
+gpg: /Users/alexwagner/.gnupg/trustdb.gpg: trustdb created
+gpg: key 087A2A0AF710B6B5: public key "Nicolas Harrand <nicolas.harrand@dsv.su.se>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+
+3. cd /Users/alexwagner/Kod/GitHub/INTSEC_Challenges
+
+4. Passphrase:  KaffeOchKatt123!
+
+gpg: directory '/Users/alexwagner/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/Users/alexwagner/.gnupg/openpgp-revocs.d/A715CEA6F114EE63003E60814DC12483424975F7.rev'
+public and secret key created and signed.
+
+pub   rsa4096 2025-11-26 [SC]
+      A715CEA6F114EE63003E60814DC12483424975F7
+uid                      Alex Wagner (INTSEC-Key) <aw950309@gmail.com>
+sub   rsa4096 2025-11-26 [E]
+
+5. gpg --export --armor aw950309@gmail.com > my-public-key.asc
+
+6. Created message.txt with the following content:
+echo "Hello Nicolas. Here is a link to a source on the Web of Trust: https://en.wikipedia.org/wiki/Web_of_trust . Also, here is my public key: " > message.txt
+
+cat my-public-key.asc >> PGP-public-key-alex-wagner.asc
+
+
+
+
+"""
