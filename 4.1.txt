@@ -1,0 +1,47 @@
+Challenge 4.1 (Simple):
+Fictional scenario: Imagine I wrote a game for the student of the course.
+I put it on a linux server where all students have an account and are part of the group students.
+Here are the files related to the game:
+- _ _ _ _ _ _ _ _ _ nicolas students game-binary
+- _ _ _ _ _ _ _ _ _ nicolas students high-scores.txt
+
+Set the rights to let anyone in the group "students" play the game and save their best score, without allowing anyone to cheat.
+
+(Apply the principle of least privilege and Fail-safe defaults)."
+
+ You can assume that a process regularly saves and flushes the content of high-scores.txt. (Credit for this problem: Alan Davidson.)
+Based on the security principles and mechanisms described in Computer Security: Art and Science, here is the solution to the challenge.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Solution:
+Principle of Least Privilege: Subjects should only be granted the specific permissions necessary to complete their task, and nothing more.
+Principle of Fail-Safe Defaults: Access decisions should be based on permissions rather than exclusions; the default state for any subject should be "access denied."
+
+I assume:
+ the game binary is designed to handle file I/O operations securely (e.g., locking the file while writing)
+The owner nicolas is the trusted administrator of the game.
+And of course that the process regulary saves and flushes the content of high-scores.txt.
+
+The goal:
+Allow members of  "students" to execute the game and for the game to update the high-scores.txt file.
+Users must not be able to modify the text file directly outside of the game environment.
+
+Issue: "students" need to write their score to high-scores.txt. but giving them "Write" (w) permission on the text file makes it so they can open it in a text editor and cheat by changing the score.
+I think using SetUID (page 1007 in book) is the best solution here.
+By setting the SetUID bit (s) on the executable, the operating system executes the program with the effective User ID of the owner (nicolas) isntead of  the student.
+So when the game runs, the process acts as nicolas. And since nicolas has write access to high-scores.txt, the game can save the score.
+But if the student tries to edit the text file directly (via the shell/text editor), they are acting as "student" and are denied write access.
+
+Apply principle of least privilege:
+"students" are given "Execute (x) permissions on the binary so they can run it, and Read (r) permissions on the text file so they can view scores.
+They lack Write (w) access to the text file to prevent cheating.
+The SetUID bit runs the process with the owner's identity during execution, granting the privileges required to make the software function.
+
+Apply principle of fail-safe defaults:
+We should  deny all access to all users who are not Nicolas or "students".
+If a user does not have explicit permission, they cannot see or run these files.
+Furthermore, by default, the group is denied write access to the data file; this ensures that if the binary fails or permissions are misconfigured, the system defaults to a state where the data cannot be corrupted.
+
+
