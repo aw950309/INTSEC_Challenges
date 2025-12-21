@@ -5,8 +5,23 @@ For each files in one directory, check that there is another file of the same na
 Compute a checksum for each files, and compare.
 
 Author: Alex Wagner.
-Version: 1.1.
+Version: 1.2.
 Date: 2025-12-21.
+
+Verified it is working with this, one file is supposed to be missing in the second directory:
+
+python3 5.1.py "/Users/alexwagner/Downloads/Zootopia.2016.2160p.UHD.BluRay.x265-TERMiNAL copy"
+"/Users/alexwagner/Downloads/Zzootopia.2016.2160p.UHD.BluRay.x265-TERMiNAL"
+
+Output:
+ [OK] .DS_Store
+[MISSING] RARBG.txt not found in /Users/alexwagner/Downloads/Zzootopia.2016.2160p.UHD.BluRay.x265-TERMiNAL
+[OK] Sample/bad_undersized.zootopia.2016.2160p.uhd.bluray.x265-terminal.sample.mkv
+[OK] Sample/zootopia.2016.2160p.uhd.bluray.x265-terminal.sample.mkv
+[OK] Zootopia.2016.2160p.UHD.BluRay.x265-TERMiNAL.mkv
+[OK] zootopia.2016.2160p.uhd.bluray.x265-terminal.nfo
+
+
 """
 #!/usr/bin/env python3
 #python 5.1.py ~/test_dir1 ~/test_dir2   <-- Example usage
