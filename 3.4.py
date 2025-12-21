@@ -10,13 +10,15 @@ Version: 5.1
 Date: 2025-12-17.
 """
 
-import tiny_h_otp
 import time
+
+import tiny_h_otp
 
 # Constants
 MAX_16BIT = 0x10000  # 65536
 MAX_STEP = 100
 MAX_OTP_ATTEMPTS = 3
+
 
 def find_mp_and_step_from_otps(otp1: str, otp2: str, tracker=None) -> tuple[str, int] | None:
     """
@@ -52,6 +54,7 @@ def find_mp_and_step_from_otps(otp1: str, otp2: str, tracker=None) -> tuple[str,
     if tracker:
         tracker.finish()
     return None
+
 
 def find_charlotte_solutions(otp1: str, otp2_prefix: str, max_step: int, tracker=None) -> list:
     """Find all master passwords that could produce Charlotte's OTPs.
@@ -121,7 +124,7 @@ def analyse_charlotte_results(solutions: list, max_attempts: int = 3) -> set[str
 
 
 # Following the main logic of my pseudo-code.
-def main()  -> None:
+def main() -> None:
     """Solve OTP challenges for Bob and Charlotte using brute-force search."""
 
     # ===== PART A: Bob's OTP =====
@@ -138,7 +141,7 @@ def main()  -> None:
     else:
         master_password, found_step = result
         STEPS_AFTER_FIRST_OBSERVED = 2
-        #Step 2: Compute OTP3 using the found master password at step n+2.
+        # Step 2: Compute OTP3 using the found master password at step n+2.
         otp3 = tiny_h_otp.TinyH_OTP(master_password, found_step + STEPS_AFTER_FIRST_OBSERVED)
         print(f"Bob's next OTP is: {otp3}")
 

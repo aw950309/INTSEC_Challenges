@@ -29,6 +29,10 @@ def decrypt_with_key(ciphertext_bytes, key):
     """Decrypts the ciphertext using a given repeating key."""
     key_length = len(key)
     decrypted_bytes = bytearray(len(ciphertext_bytes))
+
+    # BUG (change to this temporarily to test the unit test to make sure the test is testing correctly, test):
+    #decrypted_bytes[i] = ciphertext_bytes[i] ^ key[i % key_length] ^ 1  # Extra XOR with 1
+
     for i in range(len(ciphertext_bytes)):
         decrypted_bytes[i] = ciphertext_bytes[i] ^ key[i % key_length]
     return decrypted_bytes
