@@ -20,7 +20,7 @@ Output:
 [OK] Sample/zootopia.2016.2160p.uhd.bluray.x265-terminal.sample.mkv
 [OK] Zootopia.2016.2160p.UHD.BluRay.x265-TERMiNAL.mkv
 [OK] zootopia.2016.2160p.uhd.bluray.x265-terminal.nfo
-
+Program ran: 20.34 seconds
 
 """
 #!/usr/bin/env python3
