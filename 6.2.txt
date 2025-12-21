@@ -1,12 +1,24 @@
 Privacy
 
 Challenge 6.1 (Simple)
-Select an existing shortlist (from an academic, institutional, or otherwise authoritative source—give full reference) of factors or “pillars” that democracy can be said to consist of. Motivate why this list best captures the aspects of democracy that you consider essential, referring to at least one scholarly or institutional justification.
+Select an existing shortlist (from an academic, institutional, or otherwise authoritative source—give full reference) of factors or “pillars” that democracy can be said to consist of.
+Motivate why this list best captures the aspects of democracy that you consider essential, referring to at least one scholarly or institutional justification.
 Based on your shortlist, identify which democratic factors face the greatest danger from current and foreseeable developments (technological, political, economic, or social).
 For each factor you select, briefly explain the specific mechanism by which the development threatens it, giving references.
 Max 250 words, not including references (fewer words may be regarded as a strength).
 
-
-
-
+Word count: 212 excluding references.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I selected the essential elements as declared by the UN Commission on Human Rights (2002) in Resolution 2002/46 as the pillars.
+This framework in my opinion best captures democracy because it moves beyond simple election mechanics to include structural necessities like judicial independence and individual liberties (human rights), which ensures a holistic view of a functioning society rather than just a voting procedure.
+
+
+Based on this list I would say, freedom of opinion and transparency face the greatest danger. Bruce Schneier (2025) argues that the rise of AI creates a crisis of "integrity," where the data and systems we rely on are subject to manipulation by adversaries or corporate interests. This threatens freedom of opinion, as citizens increasingly interact with AI "double agents" that appear to serve the user but secretly prioritise corporate surveillance or manipulated outcomes.
+Schneier (2025) further explains that AI exploits a fundamental category error where humans confuse "interpersonal trust" (intimate human connection) with "social trust" (systemic reliability). By mimicking human conversation, AI agents feign intimacy to mask commercial agendas, making manipulation harder to detect. Additionally, the monopolistic power of these corporations forces citizens to entrust them with decision-making, effectively privatising the public square. This unregulated "surveillance capitalism" ultimately erodes the transparency and predictability necessary for democratic oversight.
+
+
+Reference:
+United Nations Commission on Human Rights. (2002). Resolution 2002/46: Further measures to promote and consolidate democracy (E/CN.4/RES/2002/46). https://ap.ohchr.org/documents/E/CHR/resolutions/E-CN_4-RES-2002-46.doc
+
+Schneier, B. (2025-12-12). AI trust, power and integrity [Guest lecture]. Department of Computer and Systems Sciences, Stockholm University.
