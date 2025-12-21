@@ -112,3 +112,33 @@ def print_section_header(message):
     print(f"{'='*60}")
     print(f"  {message}")
     print(f"{'='*60}")
+
+def get_common_passwords(verbose=False):
+    """Get list of common passwords from SecLists for brute-force attacks.
+
+    Returns:
+        list: List of password strings from Common-Credentials directory
+    """
+    home_dir = os.path.expanduser("~")
+    passwords_base = os.path.join(home_dir, "SecLists", "Passwords", "Common-Credentials")
+
+    if not os.path.isdir(passwords_base):
+        if verbose:
+            print(f"Passwords directory not found at: {passwords_base}")
+        return []
+
+    passwords = []
+    for filename in os.listdir(passwords_base):
+        if filename.endswith('.txt'):
+            filepath = os.path.join(passwords_base, filename)
+            try:
+                with open(filepath, 'r', encoding='latin-1', errors='ignore') as f:
+                    for line in f:
+                        pwd = line.strip()
+                        if pwd and not pwd.startswith('#'):
+                            passwords.append(pwd)
+            except Exception as e:
+                if verbose:
+                    print(f"Could not read {filename}: {e}")
+
+    return passwords

@@ -1,0 +1,18 @@
+Image,Flag#,Flag Value,Discovery Method,Comment,Timestamp
+"elnino/intsec-2025:hardened-v2",5,"7bdf2cc0c21a12b4d39b30bcdb6729b53c284247","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:49:16.785515
+"cait7999/passoire-hardened:latest",5,"7a4385844851763ddd795f4771e2d5a665de62ff","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:50:38.874491
+"aw950309/passoire:v1",5,"24b3a52ee00e5da545a95071c1a21419f9afa417","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:52:02.721251
+"tomej2/group50repository:latest",5,"609c88dbccf0bd62db98415fa367bee1c584fc41","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:53:07.412878
+"intsecgroup3/group3-app-image:v2.0",5,"0180362c6b857684c0d01877e73940ca3815e13b","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:53:56.385427
+"tylerponte/intsec:intsec-group8",5,"eca74a6f8d0c49d3234fd2b539a259e36462790c","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:54:48.883231
+"chabsieger/passoire-secure:v1",5,"cb573f0cb482b9e46d67ca0061791bc088edbdb7","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:55:41.734306
+"aimo2926/passoire-hardened:v1",5,"84c6bf14e56aa4334d08ed4fb2bbf6ff5a63f526","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:56:17.918180
+"uthpalavi/passoire20-secure:v1",5,"5679aeb036d35d83abe26df4c96ab14f861b1a38","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:56:50.643078
+"gabbipls/new-passoire-intsec25:phase2",5,"359bef67e8c9ba435529cf92f78d0241e56e4816","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:57:23.634956
+"codyprince/test:latest",5,"ff807ef5881b35995b51563dc03694d6fe22794c","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:57:59.888235
+"martijnme/intro-sec-group-37:v1.1.7",5,"8e12fb7a05b9b84ae19a7cd111ee851e43d1b846","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:59:05.167403
+"kali6753/passoire:NEW",5,"9cf049423a6ff90a71c723917e8a4539bf79e7cb","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T03:59:37.639808
+"fabiopereira98/project_group52:final",5,"a3e1d8a2aa566df2ff248e732b558b51d88c31d9","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T04:00:07.060538
+"askanberg/grupp57:v3",5,"04a01d63fa8ea277a8e0782d003af7ff2134b389","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T04:00:39.621081
+"g62intsec/g62intsec-public:latest",5,"07415ffc1ee2aa63974601f9575c0de1cf611af8","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T04:00:56.086003
+"alexkord/saferpoint:latest",5,"77bed512550d70ac2e89b4e041eed0160ffaa2d9","SQL Injection","Found via SQLi at /passoire/index.php",2025-12-19T04:01:12.444018

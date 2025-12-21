@@ -59,7 +59,7 @@ def find_key_and_decrypt(ciphertext_bytes, partial_key, validation_string):
             continue
     return None, None  # Return tuple on failure
 
-def solve_challenge_1_2():
+def main():
     """
     Decrypts the Challenge-1.2.enc file by coordinating helper functions.
     """
@@ -76,7 +76,7 @@ def solve_challenge_1_2():
         return
 
     # Step 2: Recover the first 14 bytes of the key using the known plaintext.
-    # This works because: Plaintext XOR Ciphertext = Key
+    # This works because: Plaintext XOR Ciphertext = Key.
     known_plaintext_bytes = known_plaintext.encode('ascii')
     partial_key = recover_partial_key(ciphertext_bytes, known_plaintext_bytes, key_length)
 
@@ -95,4 +95,4 @@ def solve_challenge_1_2():
 
 # Main method.
 if __name__ == "__main__":
-    solve_challenge_1_2()
+    main()

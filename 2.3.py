@@ -31,7 +31,7 @@ gpg:               imported: 1
 
 3. cd /Users/alexwagner/Kod/GitHub/INTSEC_Challenges
 
-4. Passphrase:  KaffeOchKatt123!
+4. Passphrase:
 
 gpg: directory '/Users/alexwagner/.gnupg/openpgp-revocs.d' created
 gpg: revocation certificate stored as '/Users/alexwagner/.gnupg/openpgp-revocs.d/A715CEA6F114EE63003E60814DC12483424975F7.rev'

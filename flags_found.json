@@ -1,0 +1,86 @@
+[
+  {
+    "flag_number": 1,
+    "flag_value": "0654a0823c2015b72407132de1940cbf",
+    "discovery_method": "Web GET: /",
+    "image": "elnino/intsec-2025:hardened-v2",
+    "timestamp": "2025-12-18T17:56:00.142444"
+  },
+  {
+    "flag_number": 2,
+    "flag_value": "0654a0823c2015b72407132de1940cbf94404434",
+    "discovery_method": "Web GET: /",
+    "image": "elnino/intsec-2025:hardened-v2",
+    "timestamp": "2025-12-18T17:56:00.143527"
+  },
+  {
+    "flag_number": 3,
+    "flag_value": "513928416b76295f653a3d2f76237c78",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "kv1st3n/passoire_final:latest",
+    "timestamp": "2025-12-18T18:00:18.081680"
+  },
+  {
+    "flag_number": 4,
+    "flag_value": "592a7e5379292d7571316476487b5c3c",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "kv1st3n/passoire_final:latest",
+    "timestamp": "2025-12-18T18:00:20.180005"
+  },
+  {
+    "flag_number": 5,
+    "flag_value": "4c2159353724223f3166633b5825473a",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "kv1st3n/passoire_final:latest",
+    "timestamp": "2025-12-18T18:00:23.264314"
+  },
+  {
+    "flag_number": 6,
+    "flag_value": "5531254c6638453d3a7e68712b22463b",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "kv1st3n/passoire_final:latest",
+    "timestamp": "2025-12-18T18:00:25.628154"
+  },
+  {
+    "flag_number": 7,
+    "flag_value": "2a31407d2e794c40614547305d645962",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "albinheldebro/passoire_final:latest",
+    "timestamp": "2025-12-18T18:05:08.075338"
+  },
+  {
+    "flag_number": 8,
+    "flag_value": "394e4d7d2e322a597452467a55706a70",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "albinheldebro/passoire_final:latest",
+    "timestamp": "2025-12-18T18:05:10.525484"
+  },
+  {
+    "flag_number": 9,
+    "flag_value": "224d48552c4d414b487230472e2c404a",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "albinheldebro/passoire_final:latest",
+    "timestamp": "2025-12-18T18:05:13.816030"
+  },
+  {
+    "flag_number": 10,
+    "flag_value": "3a537f5c78537f5f42275b4374776526",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "albinheldebro/passoire_final:latest",
+    "timestamp": "2025-12-18T18:05:16.650923"
+  },
+  {
+    "flag_number": 11,
+    "flag_value": "6632537b266a3c7871257f58387b4c24",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "akra9743/hardened-passoire:latest",
+    "timestamp": "2025-12-18T18:13:13.817828"
+  },
+  {
+    "flag_number": 12,
+    "flag_value": "61727d363b38755a687124796d262f52",
+    "discovery_method": "Web GET: /phpmyadmin",
+    "image": "akra9743/hardened-passoire:latest",
+    "timestamp": "2025-12-18T18:13:14.962280"
+  }
+]

@@ -1,0 +1,177 @@
+{
+  "total_flags": 17,
+  "images_scanned": 17,
+  "flags_by_image": {
+    "elnino/intsec-2025:hardened-v2": [
+      {
+        "flag_number": 5,
+        "flag_value": "7bdf2cc0c21a12b4d39b30bcdb6729b53c284247",
+        "discovery_method": "SQL Injection",
+        "image": "elnino/intsec-2025:hardened-v2",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:49:16.785515"
+      }
+    ],
+    "cait7999/passoire-hardened:latest": [
+      {
+        "flag_number": 5,
+        "flag_value": "7a4385844851763ddd795f4771e2d5a665de62ff",
+        "discovery_method": "SQL Injection",
+        "image": "cait7999/passoire-hardened:latest",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:50:38.874491"
+      }
+    ],
+    "aw950309/passoire:v1": [
+      {
+        "flag_number": 5,
+        "flag_value": "24b3a52ee00e5da545a95071c1a21419f9afa417",
+        "discovery_method": "SQL Injection",
+        "image": "aw950309/passoire:v1",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:52:02.721251"
+      }
+    ],
+    "tomej2/group50repository:latest": [
+      {
+        "flag_number": 5,
+        "flag_value": "609c88dbccf0bd62db98415fa367bee1c584fc41",
+        "discovery_method": "SQL Injection",
+        "image": "tomej2/group50repository:latest",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:53:07.412878"
+      }
+    ],
+    "intsecgroup3/group3-app-image:v2.0": [
+      {
+        "flag_number": 5,
+        "flag_value": "0180362c6b857684c0d01877e73940ca3815e13b",
+        "discovery_method": "SQL Injection",
+        "image": "intsecgroup3/group3-app-image:v2.0",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:53:56.385427"
+      }
+    ],
+    "tylerponte/intsec:intsec-group8": [
+      {
+        "flag_number": 5,
+        "flag_value": "eca74a6f8d0c49d3234fd2b539a259e36462790c",
+        "discovery_method": "SQL Injection",
+        "image": "tylerponte/intsec:intsec-group8",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:54:48.883231"
+      }
+    ],
+    "chabsieger/passoire-secure:v1": [
+      {
+        "flag_number": 5,
+        "flag_value": "cb573f0cb482b9e46d67ca0061791bc088edbdb7",
+        "discovery_method": "SQL Injection",
+        "image": "chabsieger/passoire-secure:v1",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:55:41.734306"
+      }
+    ],
+    "aimo2926/passoire-hardened:v1": [
+      {
+        "flag_number": 5,
+        "flag_value": "84c6bf14e56aa4334d08ed4fb2bbf6ff5a63f526",
+        "discovery_method": "SQL Injection",
+        "image": "aimo2926/passoire-hardened:v1",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:56:17.918180"
+      }
+    ],
+    "uthpalavi/passoire20-secure:v1": [
+      {
+        "flag_number": 5,
+        "flag_value": "5679aeb036d35d83abe26df4c96ab14f861b1a38",
+        "discovery_method": "SQL Injection",
+        "image": "uthpalavi/passoire20-secure:v1",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:56:50.643078"
+      }
+    ],
+    "gabbipls/new-passoire-intsec25:phase2": [
+      {
+        "flag_number": 5,
+        "flag_value": "359bef67e8c9ba435529cf92f78d0241e56e4816",
+        "discovery_method": "SQL Injection",
+        "image": "gabbipls/new-passoire-intsec25:phase2",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:57:23.634956"
+      }
+    ],
+    "codyprince/test:latest": [
+      {
+        "flag_number": 5,
+        "flag_value": "ff807ef5881b35995b51563dc03694d6fe22794c",
+        "discovery_method": "SQL Injection",
+        "image": "codyprince/test:latest",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:57:59.888235"
+      }
+    ],
+    "martijnme/intro-sec-group-37:v1.1.7": [
+      {
+        "flag_number": 5,
+        "flag_value": "8e12fb7a05b9b84ae19a7cd111ee851e43d1b846",
+        "discovery_method": "SQL Injection",
+        "image": "martijnme/intro-sec-group-37:v1.1.7",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:59:05.167403"
+      }
+    ],
+    "kali6753/passoire:NEW": [
+      {
+        "flag_number": 5,
+        "flag_value": "9cf049423a6ff90a71c723917e8a4539bf79e7cb",
+        "discovery_method": "SQL Injection",
+        "image": "kali6753/passoire:NEW",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T03:59:37.639808"
+      }
+    ],
+    "fabiopereira98/project_group52:final": [
+      {
+        "flag_number": 5,
+        "flag_value": "a3e1d8a2aa566df2ff248e732b558b51d88c31d9",
+        "discovery_method": "SQL Injection",
+        "image": "fabiopereira98/project_group52:final",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T04:00:07.060538"
+      }
+    ],
+    "askanberg/grupp57:v3": [
+      {
+        "flag_number": 5,
+        "flag_value": "04a01d63fa8ea277a8e0782d003af7ff2134b389",
+        "discovery_method": "SQL Injection",
+        "image": "askanberg/grupp57:v3",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T04:00:39.621081"
+      }
+    ],
+    "g62intsec/g62intsec-public:latest": [
+      {
+        "flag_number": 5,
+        "flag_value": "07415ffc1ee2aa63974601f9575c0de1cf611af8",
+        "discovery_method": "SQL Injection",
+        "image": "g62intsec/g62intsec-public:latest",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T04:00:56.086003"
+      }
+    ],
+    "alexkord/saferpoint:latest": [
+      {
+        "flag_number": 5,
+        "flag_value": "77bed512550d70ac2e89b4e041eed0160ffaa2d9",
+        "discovery_method": "SQL Injection",
+        "image": "alexkord/saferpoint:latest",
+        "comment": "Found via SQLi at /passoire/index.php",
+        "timestamp": "2025-12-19T04:01:12.444018"
+      }
+    ]
+  },
+  "scan_timestamp": "2025-12-19T04:01:55.306580"
+}
